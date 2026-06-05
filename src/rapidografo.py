@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 
 def plot_rapidografo(title: str,series_list: List[Dict[str, Any]], 
-                     x_cfg: Optional[Dict[str, Any]] = None, 
-                     y1_cfg: Optional[Dict[str, Any]] = None,
-                     y2_cfg: Optional[Dict[str, Any]] = None,) -> plt.Figure:
+                     x_cfg: Dict[str, Any] = None, 
+                     y1_cfg: Dict[str, Any] = None,
+                     y2_cfg: Dict[str, Any] = None,) -> plt.Figure:
 
     fig, ax1 = plt.subplots(figsize=(9,5))
     

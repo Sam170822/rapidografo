@@ -50,28 +50,3 @@ def plot_rapidografo(title: str,series_list: List[Dict[str, Any]],
     fig.tight_layout()
     plt.show()
     return fig
-
-
-days = [1, 2, 3, 4, 5]
-website_visits = [100, 500, 2500, 12000, 70000]
-ad_spend = [50, 60, 150, 400, 900]
-
-
-my_series = [
-    {"x": days, "y": website_visits, "label": "Traffic (Log Scale)", "use_right": False},
-    {"x": days, "y": ad_spend, "label": "Budget (Linear)", "use_right": True}
-]
-
-
-x_axis = {"label": "Days of Campaign", "scale": (1, 5), "log": False}
-left_y = {"label": "Views", "scale": (10, 100000), "log": True}
-right_y = {"label": "USD Spent", "scale": (0, 1000), "log": False}
-
-
-plot_rapidografo(
-    title="Campaign Scaling Metrics",
-    series_list=my_series,
-    x_cfg=x_axis,
-    y1_cfg=left_y,
-    y2_cfg=right_y
-)

@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: rapidografo
+Version: 0.0.1
+Summary: This package graphs numpy arrays in a 2D space
+Home-page: https://github.com/Sam170822/rapidografo
+Author: Samuel Rodriguez
+Author-email: "Samuel Rodriguez" samualego.15@gmail.coom
+Description-Content-Type: text/markdown
+
+# rapidografo
+
+This package graphs numpy arrays in a 2D space
+
+## Installation
+
+```shell
+$ python -m pip install rapidografo
+```
